@@ -5,7 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-EquiTurn.create([
+equi_turns = EquiTurn.create([
 	{
   	name: 'Bank of America Corporation',
   	symbol: 'BAC',
@@ -23,11 +23,6 @@ EquiTurn.create([
   	symbol: 'CSCO',
   	owned: true,
   	today: 10
-	},
-	{
-  	name: 'Verizon Communications, Inc.'
-  	symbol: 'VZ'
-  	owned: true,
-  	today: 22
-	},
+	}
+
 ])
