@@ -6,7 +6,6 @@
   <%= csrf_meta_tags %>
 </head>
 
-
 <h1>Listing EquiTurns</h1>
 
 <table>
@@ -37,6 +36,7 @@
       </tr>
     <% end %>
   </tbody>
+
 </table>
     <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
       See Returns
@@ -61,7 +61,7 @@
       </div>
     </div>
 
-<%= link_to 'New EquiTurn', new_equi_turn_path %>
+<%= link_to 'New EquiTurn', root_path, class: "button" %>
 
 <div class="row">
   <%=image_tag("black.jpg", class: "img-thumbnail black", alt: "RETURN") %>
