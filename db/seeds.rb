@@ -7,20 +7,20 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 EquiTurn.create([
 	{
-  	name: 'Bank of America Corporation'
-  	symbol: 'BAC'
+  	name: 'Bank of America Corporation',
+  	symbol: 'BAC',
   	owned: true,
   	today: 45
   },
   {
-  	name: 'Microsoft Corporation'
-  	symbol: 'MSF'
+  	name: 'Microsoft Corporation',
+  	symbol: 'MSF',
   	owned: true,
   	today: 25
   },
   {
-  	name: 'Cisco Systems, Inc.'
-  	symbol: 'CSCO'
+  	name: 'Cisco Systems, Inc.',
+  	symbol: 'CSCO',
   	owned: true,
   	today: 10
 	},

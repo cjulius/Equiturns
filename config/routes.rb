@@ -1,6 +1,8 @@
 EquiTurns::Application.routes.draw do
   resources :equi_turns
 
+  root 'equi_turns#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
