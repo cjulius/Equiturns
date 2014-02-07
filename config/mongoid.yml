@@ -73,5 +73,3 @@ production:
       uri: <%= ENV['MONGOHQ_URL'] %>
 
 
-
-        
