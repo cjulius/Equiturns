@@ -2,7 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
+body {
+	margin: 25px;
+}
 th {
 	padding: 10px;
 	text-align: left;
@@ -11,36 +13,92 @@ th {
 td {
 	padding: 0 10px;
 }
-
-.blue {
-	height: 100px;
-	width: 100px;
+.myModal {
+	margin: 0 auto;
 }
 .black {
 	width: 100%;
-	height: 360px;
+	height: 260px;
+	position: absolute;
 }
-
+.blue {
+	height: 150px;
+	width: 150px;
+	position: absolute;
+	float: left;
+	border: 8px ridge #707070;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+.blue:hover {
+	opacity: 0.4;
+	background-color: #707070;
+}
 .green {
-	height: 100px;
-	width: 100px;
+	height: 150px;
+	width: 150px;
+	position: absolute;
+	float: left;
+	border: 8px ridge #707070;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+.green:hover {
+	opacity: 0.4;
+	background-color: #707070;
 }
 .multi {
-	height: 100px;
-	width: 100px;
+	height: 150px;
+	width: 150px;
+	position: absolute;
+	float: left;
+	border: 8px ridge #707070;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+.multi:hover {
+	opacity: 0.4;
+	background-color: #707070;
 }
 
 .returns {
-	height: 100px;
-	width: 100px;
+	height: 150px;
+	width: 150px;
+	position: absolute;
+	float: left;
+	border: 8px solid #707070;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+.returns:hover {
+	opacity: 0.4;
+	background-color: #707070;
 }
 
 .gstock {
-	height: 100px;
-	width: 100px;
+	height: 150px;
+	width: 150px;
+	position: absolute;
+	float: left;
+	border: 8px ridge #707070;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+.gstock:hover {
+	opacity: 0.4;
+	background-color: #707070;
 }
 
 .wstock {
-	height: 100px;
-	width: 100px;
+	height: 150px;
+	width: 150px;
+	position: absolute;
+	float: left;
+	border: 8px ridge #707070;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+.wstock:hover {
+	opacity: 0.4;
+	background-color: #707070;
 }

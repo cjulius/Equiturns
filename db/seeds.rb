@@ -23,6 +23,12 @@ equi_turns = EquiTurn.create([
   	symbol: 'CSCO',
   	owned: true,
   	today: 10
-	}
+	},
+  {
+    name: 'Verizon Wireless',
+    symbol: 'VZ',
+    owned: true,
+    today: 10
+  }
 
 ])

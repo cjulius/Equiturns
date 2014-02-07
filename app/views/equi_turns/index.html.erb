@@ -38,15 +38,6 @@
     <% end %>
   </tbody>
 </table>
-
-<div class="container">
-  <%=image_tag("black.jpg", class: "img-thumbnail black", alt: "RETURN") %>
-      <div class="col-xs-12 col-md-2"><%=image_tag("bluestock.jpg", class: "img-circle blue", alt: "RETURN") %></div>
-      <div class="col-xs-12 col-md-2"><%=image_tag("green.jpg", class: "img-circle green", alt: "RETURN") %></div>
-      <div class="col-xs-12 col-md-2"><%=image_tag("multi.jpg", class: "img-circle multi", alt: "RETURN") %></div>
-      <div class="col-xs-12 col-md-2"><%=image_tag("greenstock.jpg", class: "img-circle gstock", alt: "RETURN") %></div>
-</div> 
-
     <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
       See Returns
     </button>
@@ -71,3 +62,17 @@
     </div>
 
 <%= link_to 'New EquiTurn', new_equi_turn_path %>
+
+<div class="row">
+  <%=image_tag("black.jpg", class: "img-thumbnail black", alt: "RETURN") %>
+      <div class="col-xs-6 col-md-2 col-lg-3"><%=image_tag("bluestock.jpg", class: "img-circle blue", alt: "RETURN") %></div>
+      <div class="col-xs-6 col-md-2 col-lg-3"><%=image_tag("green.jpg", class: "img-circle green", alt: "RETURN") %></div>
+      <div class="col-xs-6 col-md-2 col-lg-3"><%=image_tag("multi.jpg", class: "img-circle multi", alt: "RETURN") %></div>
+      <div class="col-xs-6 col-md-2 col-lg-3"><%=image_tag("greenstock.jpg", class: "img-circle gstock", alt: "RETURN") %></div>
+</div> 
+
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+      See Returns
+    </button>
+
+  

@@ -1,5 +1,5 @@
 class EquiTurnsController < ApplicationController
-  before_action :set_equi_turn, only: [:show, :edit, :update, :destroy]
+  # before_action :set_equi_turn, only: [:show, :edit, :update, :destroy]
 
  
   def index
@@ -42,22 +42,17 @@ class EquiTurnsController < ApplicationController
         redirect_to action: 'index'
       else
         render action: 'edit'
-
       end
   end
 
  
   def destroy
-    @equi_turn.destroy
-      @equi_turn = EquiTurn(params[:id])
+    @equi_turn = EquiTurn.find(params[:id])
+      @equi_turn.destroy
       redirect_to action: 'index'
-      
   end
 
   private
-    def set_equi_turn
-      @equi_turn = EquiTurn.find(params[:id])
-    end
 
     def equi_turn_params
       params.require(:equi_turn).permit(:name, :symbol, :owned, :today)
