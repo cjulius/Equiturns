@@ -13,11 +13,13 @@ class AuthsController < ApplicationController
 			session[:user_id] = user.id
 			flash[:notice] = "Welcome, #{current_user.username}!"
 			redirect_to root_path
+		else
+			redirect_to "new"
 		end
 	end
 
 	def destroy
 	  session[:user_id] = nil
-	  redirect_to equi_turns_path
+	  redirect_to root_path
 	end
 end

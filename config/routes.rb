@@ -1,8 +1,12 @@
 EquiTurns::Application.routes.draw do
 
+  get "equi_turns/index"
+  
+  resources :users, only: [:index, :create, :new]
+  resources :auths
   resources :equi_turns
-  # resources :users, only: [:index, :create, :new]
-  # resources :auths, only: [:create, :new, :destroy]
+
+  delete "auths" => "auths#destroy"
 
   root 'equi_turns#index'
 

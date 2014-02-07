@@ -36,9 +36,8 @@
         <button type="submit" class="btn btn-default">Submit</button>
       </form>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <%= current_user ? "for" + current_user.username : "Login" %>
-        <% button_to "logout", new_equi_turn_path, {method: :delete} %>
+        <li><%= link_to "Login", new_auth_path %></li>
+        <li><%= link_to "Logout", auths_path %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
