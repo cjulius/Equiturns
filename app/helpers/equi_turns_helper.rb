@@ -1,0 +1,2 @@
+module EquiTurnsHelper
+end

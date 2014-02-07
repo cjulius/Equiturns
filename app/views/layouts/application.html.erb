@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EquiTurns</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    "equi_turns", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<header><%=image_tag("logo.jpg", class: "img-thumbnail", alt: "RETURN") %></header>
+	<nav class="navbar navbar-default" role="navigation">
+		<%= render partial: 'layouts/nav' %>
+	</nav>
+
+<%= yield %>
+
+</body>
+</html>

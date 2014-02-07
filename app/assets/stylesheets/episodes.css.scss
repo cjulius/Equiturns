@@ -1,0 +1,24 @@
+// Place all the styles related to the episodes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$basewidth: 400px;
+$maincolor: gray;
+$mainfont: helvetica;
+
+.main {
+	background-color: #fff;
+	width: $basewidth / 960px * 100%;
+	margin: 0 auto;
+
+	h1 {
+		text-align: center;
+		font-family: $mainfont;
+	
+
+	}
+
+	
+
+}
+@import "bootstrap";

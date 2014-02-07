@@ -1,0 +1,38 @@
+<%= form_for(@equi_turn) do |f| %>
+  <% if @equi_turn.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@equi_turn.errors.count, "error") %> prohibited this equi_turn from being saved:</h2>
+
+      <ul>
+      <% @equi_turn.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+      <div>
+        <%= f.label :name %><br />
+        <%= f.text_field :name %>
+      </div>
+
+
+      <div>
+        <%= f.label :symbol %><br />
+        <%= f.select :symbol, ['BAC', 'MSF', 'CSCO', 'VZ'] %>
+      </div>
+
+      <div>
+        <%= f.label :owned %><br />
+        <%= f.check_box :owned %>
+      </div>
+
+      <div>
+        <%= f.label :today %><br />
+        <%= f.text_field :today %>
+      </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
