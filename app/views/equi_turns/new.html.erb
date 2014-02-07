@@ -1,14 +1,5 @@
 <h1>New EquiTurn</h1>
 
-<div class="login">
-	<h1>Log In</h1>
-		<%= form_for @user, {url:"/auths", method:"post"} do |u|%>
-			<%= u.text_field :username, :placeholder => "Your username" %><br>
-			<%= u.password_field :password, :placeholder => "Your password" %><br>
-			<%= u.submit "Log In" %>
-		<%end%>
-</div>
-
 <%= render 'form' %>
 
 <%= link_to 'Back', equi_turns_path %>

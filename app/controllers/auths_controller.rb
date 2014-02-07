@@ -1,7 +1,7 @@
 class AuthsController < ApplicationController
 	def new
 		if current_user
-			redirect_to equi_turns_path
+			redirect_to root_path
 		else 
 			@user=User.new
 		end	
@@ -12,7 +12,7 @@ class AuthsController < ApplicationController
 		if user.authenticates_with_password?(params[:user][:password])
 			session[:user_id] = user.id
 			flash[:notice] = "Welcome, #{current_user.username}!"
-			redirect_to equi_turns_path
+			redirect_to root_path
 		end
 	end
 

@@ -1,0 +1,10 @@
+<div id="login" class="container">
+	<h3 class="header">sign in</h3>
+	<%= form_for @user, {url:"/auths", method:"post"} do |u|%>
+	<%= u.text_field :username, :placeholder => "Your username", class:"margin" %><br>
+	<%= u.password_field :password, :placeholder => "Your password", class:"margin" %><br>
+	<%= u.submit "Log In", class:"margin"%>
+	<%end%>
+<br />
+	<%= link_to "back to EquiTurns", root_path %>
+</div>
