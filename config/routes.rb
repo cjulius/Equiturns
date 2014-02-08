@@ -2,7 +2,7 @@ EquiTurns::Application.routes.draw do
 
   get "equi_turns/index"
   
-  resources :users, only: [:index, :create, :new]
+  resources :users
   resources :auths
   resources :equi_turns
 
