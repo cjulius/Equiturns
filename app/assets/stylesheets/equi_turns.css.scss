@@ -2,9 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body {
-	margin: 25px;
-}
 th {
 	padding: 10px;
 	text-align: left;
@@ -13,6 +10,44 @@ th {
 td {
 	padding: 0 10px;
 }
+
+/*Navbar-----------------------------------*/
+
+.navbar-brand {
+float: left;
+padding: 0px 5px;
+font-size: 18px;
+line-height: 20px;
+height: 50px
+}
+.equilogo{
+	width: 200px;
+	height: 50px;
+}
+
+/*Carousel--------------------------------*/
+
+
+#myCarousel {
+	margin-top: 10px;
+}
+
+.carousel-caption {
+	font-size: 24px;
+}
+.carousel-caption h4{
+	font-size: 32px;
+}
+
+#myCarousel .item { height: 400px;}
+
+#slide1 {
+	background: url("invest.jpg") top left no-repeat;
+}
+#slide2 {
+	background: url("coffee.jpg") top left no-repeat;
+}
+
 .black {
 	width: 100%;
 	height: 260px;
@@ -23,7 +58,7 @@ td {
 	width: 150px;
 	position: absolute;
 	float: left;
-	border: 8px ridge #707070;
+	border: 8px solid #707070;
 	margin-top: 50px;
 	margin-left: 50px;
 }
@@ -36,7 +71,7 @@ td {
 	width: 150px;
 	position: absolute;
 	float: left;
-	border: 8px ridge #707070;
+	border: 8px solid #707070;
 	margin-top: 50px;
 	margin-left: 50px;
 }
@@ -49,7 +84,7 @@ td {
 	width: 150px;
 	position: absolute;
 	float: left;
-	border: 8px ridge #707070;
+	border: 8px solid #707070;
 	margin-top: 50px;
 	margin-left: 50px;
 }
@@ -77,7 +112,7 @@ td {
 	width: 150px;
 	position: absolute;
 	float: left;
-	border: 8px ridge #707070;
+	border: 8px solid #707070;
 	margin-top: 50px;
 	margin-left: 50px;
 }
@@ -91,7 +126,7 @@ td {
 	width: 150px;
 	position: absolute;
 	float: left;
-	border: 8px ridge #707070;
+	border: 8px solid #707070;
 	margin-top: 50px;
 	margin-left: 50px;
 }
@@ -142,3 +177,67 @@ td {
 	position:relative;
 	top:1px;
 }
+
+/*Media Queries------------------------------*/
+
+/*Portrait & landscape phone*/
+@media (max-width: 480px) {
+	#myCarousel .item { height: 300px;}
+
+	#slide1 {
+		background: url("investsmall.jpg") top left no-repeat;
+	}
+	#myCarousel	#slide2 {
+		background: url("coffeesmall.jpg") top left no-repeat;
+	}
+	.carousel-caption:{
+		font-size: 16px;
+	}
+	.carousel-caption h4 {
+		font-size: 22px;
+	}
+}
+
+/*Landscape phone to portrait tablet*/
+@media (max-width: 768px) {
+
+	#myCarousel .item { height: 400px;}
+
+	#slide1 {
+		background: url("investmed.jpg") top left no-repeat;
+	}
+	#slide2 {
+		background: url("coffeemed.jpg") top left no-repeat;
+	}
+	.carousel-caption:{
+		font-size: 16px;
+	}
+	.carousel-caption h4 {
+		font-size: 22px;
+	}
+	
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+	
+	#myCarousel .item { height: 500px;}
+
+	#slide1 {
+		background: url("invest.jpg") top left no-repeat;
+	}
+	#slide2 {
+		background: url("coffee.jpg") top left no-repeat;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+

@@ -5,74 +5,106 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
+<body>
+  <div class="carousel slide" id="myCarousel">
 
-<h1>Listing EquiTurns</h1>
+     <!--  Indicators -->
+     <ol class="carousel-indicators">
+        <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+        <li data-slide-to="1" data-target="#myCarousel"></li>
+     </ol>
+      <!--   Wrapper for slides -->
+      <div class="carousel-inner">
+        
+          <div class="item active" id="slide1">
+            <div class="carousel-caption">
+              <h4>Text Heading</h4>
+              <p>Finance text style to each other.</p>
+            </div> <!-- end carousel-caption -->
+          </div><!--  end item -->
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Symbol</th>
-      <th>Owned</th>
-      <th>today</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+          <div class="item" id="slide2">
+            <div class="carousel-caption">
+              <h4>Text Heading 2</h4>
+              <p>Finance for coffee.</p>
+            </div> <!-- end carousel-caption -->
+          </div><!--  end item -->
 
-  <tbody>
-    <% @equi_turns.each do |equi_turn| %>
-      <tr>
-        <td><%= equi_turn.name %></td>
-        <td><%= equi_turn.symbol %></td>
-        <td><%= equi_turn.owned %></td>
-        <td><%= equi_turn.today %></td>
-        <td><%= link_to 'Show', equi_turn_path(equi_turn) %></td>
-        <td><%= link_to 'Edit', edit_equi_turn_path(equi_turn) %></td>
-        <td><%= link_to 'Destroy', equi_turn, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </div> <!-- carousel-inner -->
 
-      </tr>
-    <% end %>
-  </tbody>
+      <!-- Control -->
+      <a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+      <a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
 
-</table>
-    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-      See Returns
-    </button>
+  </div><!--  end myCarousel -->
 
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-            <h4 class="modal-title" id="myModalLabel">See Returns</h4>
-          </div>
-          <div class="modal-body">
-           <%=image_tag("returns.jpg", class: "img-thumbnail", alt: "RETURN") %>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+  <h2>Listing EquiTurns</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Symbol</th>
+          <th>Owned</th>
+          <th>today</th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @equi_turns.each do |equi_turn| %>
+          <tr>
+            <td><%= equi_turn.name %></td>
+            <td><%= equi_turn.symbol %></td>
+            <td><%= equi_turn.owned %></td>
+            <td><%= equi_turn.today %></td>
+            <td><%= link_to 'Show', equi_turn_path(equi_turn) %></td>
+            <td><%= link_to 'Edit', edit_equi_turn_path(equi_turn) %></td>
+            <td><%= link_to 'Destroy', equi_turn, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+          </tr>
+        <% end %>
+      </tbody>
+
+  </table>
+      <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        See Returns
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="myModalLabel">See Returns</h4>
+            </div>
+            <div class="modal-body">
+             <%=image_tag("returns.jpg", class: "img-thumbnail", alt: "RETURN") %>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-<%= link_to 'New EquiTurn', new_equi_turn_path, class: "button" %>
+  <%= link_to 'New EquiTurn', new_equi_turn_path, class: "button" %>
 
-<div class="row">
-  <%=image_tag("black.jpg", class: "img-thumbnail black", alt: "RETURN") %>
-      <div class="col-xs-6 col-md-2 col-lg-3"><%=image_tag("bluestock.jpg", class: "img-circle blue", alt: "RETURN") %></div>
-      <div class="col-xs-6 col-md-2 col-lg-3"><%=image_tag("green.jpg", class: "img-circle green", alt: "RETURN") %></div>
-      <div class="col-xs-6 col-md-2 col-lg-3"><%=image_tag("multi.jpg", class: "img-circle multi", alt: "RETURN") %></div>
-      <div class="col-xs-6 col-md-2 col-lg-3"><%=image_tag("greenstock.jpg", class: "img-circle gstock", alt: "RETURN") %></div>
-</div> 
+  <div class="row">
+    <%=image_tag("black.jpg", class: "img-thumbnail black", alt: "RETURN") %>
+        <div class="col-xs-6 col-md-2 col-lg-3"><%=image_tag("bluestock.jpg", class: "img-circle blue", alt: "RETURN") %></div>
+        <div class="col-xs-6 col-md-2 col-lg-3"><%=image_tag("green.jpg", class: "img-circle green", alt: "RETURN") %></div>
+        <div class="col-xs-6 col-md-2 col-lg-3"><%=image_tag("multi.jpg", class: "img-circle multi", alt: "RETURN") %></div>
+        <div class="col-xs-6 col-md-2 col-lg-3"><%=image_tag("greenstock.jpg", class: "img-circle gstock", alt: "RETURN") %></div>
+  </div> 
 
-    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-      See Returns
-    </button>
-
+      <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        See Returns
+      </button>
+</body>
   

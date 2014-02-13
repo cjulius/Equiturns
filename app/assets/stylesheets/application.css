@@ -25,7 +25,9 @@ th {
 td {
 	padding: 0 10px;
 }
-
+/*html, body  .container-fluid, .row, .col-md-12{
+	height: 100%;
+}*/
 
 
 
