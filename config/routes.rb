@@ -5,6 +5,7 @@ EquiTurns::Application.routes.draw do
   resources :users
   resources :auths
   resources :equi_turns
+  resources :stocks
 
   delete "auths" => "auths#destroy"
 

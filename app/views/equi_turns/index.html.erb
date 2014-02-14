@@ -38,7 +38,23 @@
 
   </div><!--  end myCarousel -->
 
-  <h2>Listing EquiTurns</h2>
+  <div class="row" id="bigCallout">
+      <div class="col-12">
+        <div class="well well-small visible-sm">
+            <a href="" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"></span> Give us a Call </a>
+        </div> <!-- end well small -->
+        <div class="well">
+            <div class="page-header">
+              <h1> All About Returns <small> See How It Works</small></h1>
+            </div> <!-- end page-header -->
+            <p class="lead">Fast, Easy, Free...financial resource available to you today...take control of your future</p>
+        </div> <!-- end well -->
+
+      </div> <!-- end col-12 -->
+
+  </div><!--- end bigCallout -->
+
+  <h2>Current Portfolio</h2>
 
     <table>
       <thead>
@@ -71,7 +87,7 @@
 
   </table>
       <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-        See Returns
+        See Current Stocks
       </button>
 
       <!-- Modal -->
@@ -93,7 +109,7 @@
         </div>
       </div>
 
-  <%= link_to 'New EquiTurn', new_equi_turn_path, class: "button" %>
+  <%= link_to 'or Add New Stock', new_equi_turn_path, class: "link" %>
 
   <div class="row">
     <%=image_tag("black.jpg", class: "img-thumbnail black", alt: "RETURN") %>

@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 gem "mongoid", github: "mongoid/mongoid"
 gem 'rails_12factor'
+gem "stock_quote"
 
 gem 'bcrypt-ruby', github: 'codahale/bcrypt-ruby'
 
@@ -33,6 +34,10 @@ gem 'jbuilder', '~> 1.2'
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
+end
+
+group :development, :test do
+  gem 'pry'
 end
 
 # Use ActiveModel has_secure_password

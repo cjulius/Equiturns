@@ -11,6 +11,7 @@ td {
 	padding: 0 10px;
 }
 
+
 /*Navbar-----------------------------------*/
 
 .navbar-brand {
@@ -54,12 +55,12 @@ height: 50px
 	position: absolute;
 }
 .blue {
-	height: 150px;
-	width: 150px;
+	height: 200px;
+	width: 200px;
 	position: absolute;
 	float: left;
 	border: 8px solid #707070;
-	margin-top: 50px;
+	margin-top: 20px;
 	margin-left: 50px;
 }
 .blue:hover {
@@ -67,12 +68,12 @@ height: 50px
 	background-color: #707070;
 }
 .green {
-	height: 150px;
-	width: 150px;
+	height: 200px;
+	width: 200px;
 	position: absolute;
 	float: left;
 	border: 8px solid #707070;
-	margin-top: 50px;
+	margin-top: 20px;
 	margin-left: 50px;
 }
 .green:hover {
@@ -80,12 +81,12 @@ height: 50px
 	background-color: #707070;
 }
 .multi {
-	height: 150px;
-	width: 150px;
+	height: 200px;
+	width: 200px;
 	position: absolute;
 	float: left;
 	border: 8px solid #707070;
-	margin-top: 50px;
+	margin-top: 20px;
 	margin-left: 50px;
 }
 .multi:hover {
@@ -94,12 +95,12 @@ height: 50px
 }
 
 .returns {
-	height: 150px;
-	width: 150px;
+	height: 200px;
+	width: 200px;
 	position: absolute;
 	float: left;
 	border: 8px solid #707070;
-	margin-top: 50px;
+	margin-top: 20px;
 	margin-left: 50px;
 }
 .returns:hover {
@@ -108,12 +109,12 @@ height: 50px
 }
 
 .gstock {
-	height: 150px;
-	width: 150px;
+	height: 200px;
+	width: 200px;
 	position: absolute;
 	float: left;
 	border: 8px solid #707070;
-	margin-top: 50px;
+	margin-top: 20px;
 	margin-left: 50px;
 }
 .gstock:hover {
@@ -122,12 +123,12 @@ height: 50px
 }
 
 .wstock {
-	height: 150px;
-	width: 150px;
+	height: 200px;
+	width: 200px;
 	position: absolute;
 	float: left;
 	border: 8px solid #707070;
-	margin-top: 50px;
+	margin-top: 20px;
 	margin-left: 50px;
 }
 .wstock:hover {
@@ -135,47 +136,8 @@ height: 50px
 	background-color: #707070;
 }
 
-.button {
-		-moz-box-shadow:inset 0px 1px 0px 0px #bee2f9;
-	-webkit-box-shadow:inset 0px 1px 0px 0px #bee2f9;
-	box-shadow:inset 0px 1px 0px 0px #bee2f9;
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #63b8ee), color-stop(1, #468ccf) );
-	background:-moz-linear-gradient( center top, #63b8ee 5%, #468ccf 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#63b8ee', endColorstr='#468ccf');
-	background-color:#63b8ee;
-	border-top-left-radius:7px;
-	border-top-right-radius:7px;
-	border-bottom-right-radius:7px;
-	border-bottom-left-radius:7px;
-	text-indent:0;
-	border:1px solid #3866a3;
-	display:inline-block;
-	color:#ffffff;
-	font-family:Arial;
-	font-size:18px;
-	font-weight:bold;
-	font-style:normal;
-	height:47px;
-	line-height:40px;
-	width:146px;
-	text-decoration:none;
-	text-align:center;
-	text-shadow:1px 1px 0px #7cacde;
-/*	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5e95cc), color-stop(1, #306fad) );
-	background:-moz-linear-gradient( center top, #5e95cc 5%, #306fad 100% );*/
-	
-}
-.button:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #306fad), color-stop(1, #5e95cc) );
-	background:-moz-linear-gradient( center top, #306fad 5%, #5e95cc 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#306fad', endColorstr='#5e95cc');
-	background-color:#306fad;
-	text-decoration:none;
-}
-
-.button:active {
-	position:relative;
-	top:1px;
+.link {
+	font-size: 20px
 }
 
 /*Media Queries------------------------------*/

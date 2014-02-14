@@ -1,0 +1,29 @@
+<h1>Stock Portfolio</h1>
+
+</ul>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Ask</th>
+          <th>Change</th>
+          <th>PE</th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @stocks.each do |stock| %>
+          <tr>
+            <td><%= stock.name %></td>
+            <td><%= stock.ask %></td>
+            <td><%= stock.change %></td>
+            <td><%= stock.pe_ratio %></td>
+          </tr>
+        <% end %>
+      </tbody>
+
+  </table>
